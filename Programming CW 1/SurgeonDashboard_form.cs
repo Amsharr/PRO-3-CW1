@@ -16,10 +16,11 @@ namespace Programming_CW_1
         public SurgeonDashboard_form()
         {
             InitializeComponent();
+
         }
 
-        //set method is used to show the username of the user currently logged in 
-        public void setUsername(string username) 
+        //getUsername method is used to show the username of the user currently logged in 
+        public void getUsername(string username) 
         { 
            lbl_username.Text = ("Dr. " + username);    
         }
