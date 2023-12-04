@@ -10,7 +10,7 @@ namespace Programming_CW_1
             InitializeComponent();
         }
 
-        public void setUsername(string username) 
+        public void getUsername(string username) 
         { 
             lbl_username.Text = username;
         }
