@@ -12,13 +12,13 @@ namespace Programming_CW_1
 {
     public partial class login_form : Form
     {
-        private dentalSurgeon dentalSurgeon;
+        private doctor doctor;
         private frontOfficeOperator frontOfficeOperator;
         public login_form()
         {
             InitializeComponent();
 
-            dentalSurgeon = new dentalSurgeon();
+            doctor = new doctor();
             frontOfficeOperator = new frontOfficeOperator();
         }
 
@@ -28,7 +28,7 @@ namespace Programming_CW_1
             string passwordEntered = txt_password.Text;
 
             // Authentication for Dental Surgeon
-            if (dentalSurgeon.Login(usernameEntered, passwordEntered))
+            if (doctor.Login(usernameEntered, passwordEntered))
             {
                 MessageBox.Show("Welcome" + usernameEntered);
 
@@ -91,9 +91,9 @@ namespace Programming_CW_1
             return Username == usernameEntered && Password == passwordEntered;
         }
     }
-    public class dentalSurgeon : User
+    public class doctor : User
     {
-       public dentalSurgeon() {
+       public doctor() {
 
             setUsername("A.D_Ranasinghe");
             setPassword("123");

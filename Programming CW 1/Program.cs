@@ -16,7 +16,7 @@ namespace Programming_CW_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login_form());
+            Application.Run(new AdminDashboard_form());
         }
     }
 }
