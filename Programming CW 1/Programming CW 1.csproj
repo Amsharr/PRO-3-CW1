@@ -52,14 +52,38 @@
     <Compile Include="AdminDashboard_form.Designer.cs">
       <DependentUpon>AdminDashboard_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditAppointment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAppointment_form.Designer.cs">
+      <DependentUpon>EditAppointment_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoice_form.Designer.cs">
+      <DependentUpon>invoice_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="login_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login_form.Designer.cs">
       <DependentUpon>login_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="payment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment_form.Designer.cs">
+      <DependentUpon>payment_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="showAppointment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showAppointment_form.Designer.cs">
+      <DependentUpon>showAppointment_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="SurgeonDashboard_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,8 +93,17 @@
     <EmbeddedResource Include="AdminDashboard_form.resx">
       <DependentUpon>AdminDashboard_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditAppointment_form.resx">
+      <DependentUpon>EditAppointment_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoice_form.resx">
+      <DependentUpon>invoice_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment_form.resx">
+      <DependentUpon>payment_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +113,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="showAppointment_form.resx">
+      <DependentUpon>showAppointment_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SurgeonDashboard_form.resx">
       <DependentUpon>SurgeonDashboard_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +133,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_299669045_MqHC52q09Ze8Xg1MXyHd09uU5nLxAL5N.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
