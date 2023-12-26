@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_username = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,7 +55,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_total = new System.Windows.Forms.TextBox();
-            this.lb_username = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,9 +123,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lb_username);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbl_username);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(799, 80);
@@ -141,15 +139,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // lbl_username
-            // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_username.Location = new System.Drawing.Point(728, 11);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(0, 24);
-            this.lbl_username.TabIndex = 0;
             // 
             // label3
             // 
@@ -348,14 +337,14 @@
             this.txt_total.Size = new System.Drawing.Size(105, 20);
             this.txt_total.TabIndex = 39;
             // 
-            // lb_username
+            // lbl_username
             // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Location = new System.Drawing.Point(720, 30);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(0, 13);
-            this.lb_username.TabIndex = 2;
-            this.lb_username.Click += new System.EventHandler(this.label13_Click);
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Location = new System.Drawing.Point(719, 25);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(0, 24);
+            this.lbl_username.TabIndex = 2;
             // 
             // payment_form
             // 
@@ -403,7 +392,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -424,6 +412,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_total;
-        private System.Windows.Forms.Label lb_username;
+        private System.Windows.Forms.Label lbl_username;
     }
 }

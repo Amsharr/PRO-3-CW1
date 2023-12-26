@@ -60,7 +60,6 @@ namespace Programming_CW_1
 
         private void ClearInputFields()
         {
-            // Clear all input fields
             txt_fullName.Text = string.Empty;
             txt_nicNo.Text = string.Empty;
             txt_mobileNo.Text = string.Empty;
@@ -86,10 +85,12 @@ namespace Programming_CW_1
 
             MessageBox.Show("The record has been edited");
 
-            ClearInputFields(); 
+            ClearInputFields();
 
-            // Refresh the DataGridView reflect changes
-            DisplayAppointments();
+            // Refresh the DataGridView
+            dataGridViewAppointments.DataSource = null;
+            dataGridViewAppointments.DataSource = appointments; 
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -105,8 +106,9 @@ namespace Programming_CW_1
                     // Remove the selected appointment from the list
                     appointments.Remove(selectedAppointment);
 
-                    // Refresh the DataGridView to reflect changes
-                    DisplayAppointments();
+                    // Refresh the DataGridView
+                    dataGridViewAppointments.DataSource = null;
+                    dataGridViewAppointments.DataSource = appointments;
 
                     // Clear the input fields after deletion
                     ClearInputFields();
@@ -121,6 +123,10 @@ namespace Programming_CW_1
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+        public void getUsername(string username)
+        {
+            lbl_username.Text = username;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -143,6 +149,11 @@ namespace Programming_CW_1
             payment_form payments = new payment_form(appointments);
             payments.Show();
             this.Hide();
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

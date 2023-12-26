@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_viewAppointments = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.txt_time = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,6 +69,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btn_logout);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbl_username);
             this.panel1.Location = new System.Drawing.Point(0, -1);
@@ -90,7 +92,7 @@
             this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbl_viewAppointments);
             this.panel2.Location = new System.Drawing.Point(0, 73);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(153, 377);
@@ -120,17 +122,17 @@
             this.label9.Text = "Edit Appointments";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label1
+            // lbl_viewAppointments
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "View Appointments";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_viewAppointments.AutoSize = true;
+            this.lbl_viewAppointments.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_viewAppointments.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_viewAppointments.Location = new System.Drawing.Point(12, 60);
+            this.lbl_viewAppointments.Name = "lbl_viewAppointments";
+            this.lbl_viewAppointments.Size = new System.Drawing.Size(128, 15);
+            this.lbl_viewAppointments.TabIndex = 0;
+            this.lbl_viewAppointments.Text = "View Appointments";
+            this.lbl_viewAppointments.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -280,6 +282,18 @@
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
+            // btn_logout
+            // 
+            this.btn_logout.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Location = new System.Drawing.Point(712, 45);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(75, 23);
+            this.btn_logout.TabIndex = 2;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // AdminDashboard_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,7 +335,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_viewAppointments;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
@@ -339,5 +353,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_logout;
     }
 }

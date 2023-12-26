@@ -267,7 +267,7 @@
             // 
             this.btn_edit.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Location = new System.Drawing.Point(679, 119);
+            this.btn_edit.Location = new System.Drawing.Point(679, 117);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(109, 25);
             this.btn_edit.TabIndex = 38;

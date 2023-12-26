@@ -62,7 +62,9 @@ namespace Programming_CW_1
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            showAppointment_form viewAppointments = new showAppointment_form(appointments);
+            viewAppointments.Show();
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -86,26 +88,18 @@ namespace Programming_CW_1
         }
 
         private void btn_book_Click(object sender, EventArgs e)
-        {
-            //Creating a new object called appointment 
+        {          
             Appointment appointment = NewAppointment();
+            appointments.Add(appointment);       
 
-            // New appointment is added to the list 
-            appointments.Add(appointment);           
-
-            // Clear the input fields after appointment has been added 
             ClearInputFields();
 
             // navigate to view appointments page and show message.
             MessageBox.Show("Appointment successfully added");
-            showAppointment_form viewAppointments = new showAppointment_form(appointments);
-            viewAppointments.Show();
-            this.Hide();
         }
 
         private Appointment NewAppointment()
         {
-            // Create a new appointment object using encapsulation
             return new Appointment
             {
                 FullName = txt_fullName.Text,
@@ -116,6 +110,7 @@ namespace Programming_CW_1
                 Time = txt_time.Text
             };
         }
+
         private void ClearInputFields()
         {
             // Clear all input fields
@@ -149,6 +144,13 @@ namespace Programming_CW_1
             payment_form payments = new payment_form(appointments);
             payments.Show();
             this.Hide();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            login_form login = new login_form();
+            login.Show();   
+            this.Hide();    
         }
     }
 }

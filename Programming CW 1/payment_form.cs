@@ -122,6 +122,8 @@ namespace Programming_CW_1
             dataGridViewAppointments.Columns.Clear();
             dataGridViewAppointments.AutoGenerateColumns = true;
 
+            dataGridViewAppointments.DataSource = appointments;
+
             // Apply filtering based on appointmentId or date
             int appointmentIdFilter;
             DateTime dateFilter = dateTimePicker.Value;
@@ -183,6 +185,11 @@ namespace Programming_CW_1
             {
                 MessageBox.Show("Please select a treatment type.");
             }
+        }
+
+        public void getUsername(string username)
+        {
+            lbl_username.Text = username;
         }
 
         private void label13_Click(object sender, EventArgs e)

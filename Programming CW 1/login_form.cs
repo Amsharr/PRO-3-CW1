@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Programming_CW_1.AdminDashboard_form;
 
 namespace Programming_CW_1
 {
@@ -14,6 +15,9 @@ namespace Programming_CW_1
     {
         private doctor doctor;
         private frontOfficeOperator frontOfficeOperator;
+
+        private List<Appointment> appointments;
+        private List<Appointment> filteredAppointments;
         public login_form()
         {
             InitializeComponent();
@@ -33,7 +37,7 @@ namespace Programming_CW_1
                 MessageBox.Show("Welcome" + usernameEntered);
 
                 // Open Dental Surgeon's dashboard 
-                SurgeonDashboard_form surgeonDashboard = new SurgeonDashboard_form();
+                SurgeonDashboard_form surgeonDashboard = new SurgeonDashboard_form(appointments);
                 surgeonDashboard.Show();
                 this.Hide();
 

@@ -26,10 +26,16 @@ namespace Programming_CW_1
 
         private void DisplayAppointments()
         {
-            // Set up columns in the DataGridView
+            // Create and fill columns in the DataGridView
             dataGridViewAppointments.Columns.Clear();
             dataGridViewAppointments.AutoGenerateColumns = true;
 
+            dataGridViewAppointments.DataSource = appointments;
+        
+        }
+
+        private void DisplayFilteredAppointments()
+        {
             // Apply filtering based on appointmentId or date
             int appointmentIdFilter;
             DateTime dateFilter = dateTimePicker.Value;
@@ -50,7 +56,7 @@ namespace Programming_CW_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DisplayAppointments();
+            DisplayFilteredAppointments();
         }
 
         public void getUsername(string username)
