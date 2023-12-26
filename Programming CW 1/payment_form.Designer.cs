@@ -56,6 +56,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_total = new System.Windows.Forms.TextBox();
+            this.lb_username = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -123,6 +124,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_username);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbl_username);
             this.panel1.Location = new System.Drawing.Point(1, 1);
@@ -346,6 +348,15 @@
             this.txt_total.Size = new System.Drawing.Size(105, 20);
             this.txt_total.TabIndex = 39;
             // 
+            // lb_username
+            // 
+            this.lb_username.AutoSize = true;
+            this.lb_username.Location = new System.Drawing.Point(720, 30);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(0, 13);
+            this.lb_username.TabIndex = 2;
+            this.lb_username.Click += new System.EventHandler(this.label13_Click);
+            // 
             // payment_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,5 +424,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_total;
+        private System.Windows.Forms.Label lb_username;
     }
 }

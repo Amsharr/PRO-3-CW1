@@ -184,6 +184,11 @@ namespace Programming_CW_1
                 MessageBox.Show("Please select a treatment type.");
             }
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Treatment
