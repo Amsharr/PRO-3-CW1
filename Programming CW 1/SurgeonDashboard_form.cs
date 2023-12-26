@@ -20,7 +20,7 @@ namespace Programming_CW_1
         }
 
         //getUsername method is used to show the username of the user currently logged in 
-        public void getUsername(string username) 
+        public void setUsername(string username) 
         { 
            lbl_username.Text = ("Dr. " + username);    
         }

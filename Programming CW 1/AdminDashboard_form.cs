@@ -50,7 +50,7 @@ namespace Programming_CW_1
 
         
 
-        public void getUsername(string username) 
+        public void setUsername(string username) 
         { 
             lbl_username.Text = username;
         }

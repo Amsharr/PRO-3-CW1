@@ -38,7 +38,7 @@ namespace Programming_CW_1
                 this.Hide();
 
                 //display username in the dashboard
-                surgeonDashboard.getUsername(txt_username.Text);
+                surgeonDashboard.setUsername(txt_username.Text);
 
             }
             // Authentication Front Office Operator
@@ -52,7 +52,7 @@ namespace Programming_CW_1
                 this.Hide();
 
                 //display username in dashboard
-                adminDashboard.getUsername(txt_username.Text);
+                adminDashboard.setUsername(txt_username.Text);
             }
             else
             {
